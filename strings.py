@@ -12,22 +12,15 @@ Example: ['mont', 'y py', 'thon', 's fl', 'ying', ' cir', 'cus']
 import pytest
 
 def no_duplicates(a_string):
-    temp = ''
-    for i in a_string:
-        if i not in temp:
-            temp += i
-    return ''.join(sorted(temp))
+    pass
+
 
 def reversed_words(a_string):
-    return a_string.split()[::-1]
+    pass
 
 
 def four_char_strings(a_string):
-    #print([a_string[i:i+4] for i in range(0, len(a_string), 4)])
-    return [a_string[i:i+4] for i in range(0, len(a_string), 4)]
-
-
-def test_no_duplicates():
+    passdef test_no_duplicates():
     s = 'monty pythons flying circus'
     assert no_duplicates(s) == ' cfghilmnoprstuy'
 
